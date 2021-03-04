@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+// import customized Angular Material theme (important!)
+@import "./styles/theme";
+
+/* Global styles */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+.left,
+.middle,
+.right {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.middle {
+  justify-content: center;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.link {
+  text-decoration: underline;
+
+  &:hover {
+    color: $blautanne;
+  }
+}
